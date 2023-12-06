@@ -1,6 +1,7 @@
 package com.example.portal.models;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -21,15 +22,15 @@ public class Classes {
     @NotBlank
     private String idTeacher;
     private List<String> idStudent;
-    @NotBlank
+    @NotNull
     private int time;
-    @NotBlank
+    @NotNull
     private int timeStart;
-    @NotBlank
+    @NotNull
     private int timeEnd;
     @NotBlank
     private String location;
-    @NotBlank
+    @NotNull
     private int quantity;
 
 }
